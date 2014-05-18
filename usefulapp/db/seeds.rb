@@ -5,3 +5,14 @@
 #
 #   cities = City.create([{ name: 'Chicago' }, { name: 'Copenhagen' }])
 #   Mayor.create(name: 'Emanuel', city: cities.first)
+
+	locations = Location.create([
+
+		{ name: "Target", address: "100 main street, Santa Monica, CA 90401", store_type: "General"},
+		{ name: "CVS", address: "100 main street, Santa Monica, CA 90401", store_type: "Pharmacy"},
+		{ name: "Target", address: "100 main street, Santa Monica, CA 90401", store_type: "General"},
+		{ name: "Target", address: "100 main street, Santa Monica, CA 90401", store_type: "General"}
+
+])
+
+ 
