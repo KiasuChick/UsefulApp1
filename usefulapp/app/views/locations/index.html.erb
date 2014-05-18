@@ -1,0 +1,16 @@
+<h1>This is the Locations Page!</h1>
+<div class="row">
+	
+		<% @locations.each do |l| %>
+			<%= link_to(location_path(l)) do %>
+				<div class="col-md-4 border">	
+					<h2>Name <%= l.name %></h2>
+					<h2> Address <%= l.address %></h2>
+					<h3>For... <%= l.store_type %></h3>
+				</div>
+			<% end %>
+		<% end %>
+
+</div>
+
+<h2><%= link_to "Add a new location", new_location_path %></h2>
