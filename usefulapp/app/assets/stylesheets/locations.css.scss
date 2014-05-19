@@ -9,12 +9,12 @@ h1 { text-align: center; }
 
 a {
 	color: black;
-	&:hover { color: orange; }
+	
 }
 
 .border {
-	border: solid 5px black;
-	height: 250px;
+	border: dashed 2px red;
+	height: 300px;
 	padding: 15px;
 	overflow: scroll;
 }

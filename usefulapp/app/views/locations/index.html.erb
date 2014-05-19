@@ -1,14 +1,15 @@
-<h1>This is the Locations Page</h1>
+<h1><b>Locations Page</b></h1>
 <div class="row">
 	
 		<% @locations.each do |l| %>
-			<%= link_to(location_path(l)) do %>
-				<div class="col-md-4 border">	
+			
+				<div class="panel panel-default">	
 					<h2>Name: <%= l.name %></h2>
 					<h2> Address: <%= l.address %></h2>
 					<h3> Store Type: <%= l.store_type %></h3>
+					<%= link_to "Show Location", location_path(l), class: "btn btn-danger" %>
 				</div>
-			<% end %>
+			
 		<% end %>
 
 </div>
